@@ -1,0 +1,10 @@
+.card__title-bg
+.card__title
+  | #{card.name}
+.card__focus-desc
+  .card__focus-subline
+    | #{card.subline}
+  if card.description 
+    each line in card.description
+      .card__line 
+        | #{line}

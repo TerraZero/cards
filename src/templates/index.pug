@@ -1,0 +1,11 @@
+include mixins
+doctype html
+head
+  link(rel='stylesheet', href='./styles.css')
+body
+  .index 
+    h1 Index
+    ul
+      each item in index
+        li
+          a(href='/' + item + '.html') #{item}.json

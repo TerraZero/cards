@@ -1,0 +1,9 @@
+.card__title-bg
+.card__title
+  | #{card.name}
+.card__weapon-desc
+  .card__weapon-props
+    each value, prop in card.props
+      .card__weapon-prop(class=(value === true ? 'card__weapon-prop--span' : '')) #{prop}
+      if value !== true
+        .card__weapon-value #{value}

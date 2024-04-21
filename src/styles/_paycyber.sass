@@ -1,0 +1,105 @@
+&
+  --card--field--size: 7em
+  --card--field--items: 7
+  --card--title--height: 40px
+  --card--title--offset: 30px
+  --card--left--size: 30px
+  --card--left--width: calc(var(--card--left--size) * 1.2)
+
+.card
+
+  &__field
+    display: grid
+    grid-template-columns: repeat(var(--card--field--items), 1fr)
+    grid-template-rows: repeat(var(--card--field--items), 1fr)
+    width: var(--card--field--size)
+    height: var(--card--field--size)
+    background: black
+    gap: 2px
+    border: 2px solid black
+    position: absolute
+    top: 64px
+    left: calc((100% - var(--card--field--size) - 4px) / 2)
+
+  &__cell--fill
+    background: black
+
+  &__cell--empty
+    background: white
+
+  &__title
+    position: absolute
+    top: 5px
+    font-weight: bold
+    font-size: 16px
+    color: white
+    background: black
+    position: absolute
+    top: 0
+    left: var(--card--title--offset)
+    right: var(--card--title--offset)
+    height: var(--card--title--height)
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 100%
+      width: 0px
+      height: 0px
+      border-style: solid
+      border-width: var(--card--title--height) var(--card--title--offset) 0 0
+      border-color: black transparent transparent transparent
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      right: 100%
+      width: 0px
+      height: 0px
+      border-style: solid
+      border-width: 0 var(--card--title--offset) var(--card--title--height) 0
+      border-color: transparent black transparent transparent
+    
+  &__left
+    position: absolute
+    top: calc(50% - var(--card--left--size))
+    width: 0px
+    height: 0px
+    border-style: solid
+    border-width: var(--card--left--size) 0 var(--card--left--size) var(--card--left--width)
+    border-color: transparent transparent transparent black
+
+  &__right
+    position: absolute
+    top: calc(50% - var(--card--left--size))
+    right: 0
+    width: var(--card--left--width)
+    height: calc(var(--card--left--size) * 2)
+    background: black
+
+    &:before
+      content: ''
+      position: absolute
+      bottom: 100%
+      left: 0
+      width: 0px
+      height: 0px
+      border-style: solid
+      border-width: var(--card--left--size) 0 0 var(--card--left--width)
+      border-color: transparent transparent transparent black
+
+    &:after
+      content: ''
+      position: absolute
+      top: 100%
+      left: 0
+      width: 0px
+      height: 0px
+      border-style: solid
+      border-width: var(--card--left--size) var(--card--left--width) 0 0
+      border-color: black transparent transparent transparent

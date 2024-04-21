@@ -1,0 +1,572 @@
+{
+  "cards": [
+    {
+      "name": "Niederstrecken",
+      "icon": "smite.png",
+      "points": "2",
+      "description": [
+        "Füre einen starken Schlag gegen einen Gegner aus der taumelt. [MOD + 10 + 2d10]",
+        "Füre einen Schlage aus der 3 Taumeln verursacht. [ATK / 2]"
+      ]
+    },
+    {
+      "name": "Bannkreis",
+      "icon": "bann.webp",
+      "points": "0",
+      "description": [
+        "Verbrauche 2 Strahlen und erzeuge ein Bannkreis {2} in Reichweite 4 für 2 Runden. Im Bannkreis -1 BEW und [STH + 1] Schaden beim betreten und verlassen.",
+        "[P: STH]: Erstelle 1 Strahlen."
+      ]
+    },
+    {
+      "name": "Heilige Lanze",
+      "icon": "lanze.png",
+      "points": "3",
+      "description": [
+        "Erschaffe aus deinem Schwert eine Lanze aus Strahlen. Rechweite 2 [MOD + 5 * STH-X] Stehst du in einem Bannkreis kannst du mit 2 weniger Punkte den Angriff ausführen."
+      ]
+    },
+    {
+      "name": "Heil Lanze",
+      "icon": "heillanze.png",
+      "points": "1",
+      "description": [
+        "Erstelle eine Lanze auf dem Feld wo du stehst, für 3 Runden. Jede Runde die ein Held in Reichweite 1 von der Lanze startet, erhält 1d4 Leben."
+      ]
+    },
+    {
+      "name": "Bollwerk",
+      "icon": "bollwerk.png",
+      "points": "1",
+      "description": [
+        "AURA: Veringere den Schaden um die hälfte. Bewegung ist um die häfte verringert."
+      ]
+    },
+    {
+      "name": "Enterhaken",
+      "icon": "enter.png",
+      "points": "1",
+      "description": [
+        "Kann einen Gegner an dich herranziehen {5}. Stärke Duell entscheidet wer gezogen wird, gezogener bekommt 2 Taumeln."
+      ]
+    },
+    {
+      "name": "Markieren",
+      "icon": "mark.png",
+      "points": "1",
+      "description": [
+        "Verbaucht 1 Inferno, Gegner ist bis zum Ende des Kampfes Markiert. Jeder Angriff auf ein Markiertes Ziel erhöht den Schaden um 1d4."
+      ]
+    },
+    {
+      "name": "Kopfgeld Einfordern",
+      "icon": "kopfgeld.png",
+      "points": "4",
+      "description": [
+        "Verursacht einen schweren Schlag in Reichweite 2 und erzeuge 3 Inferno. [MOD + 1d20] + [ATK * 2]. Wenn das Ziel Markiert ist: Kostet der Angriff nur 1 Punkt. Tötet der Angriff: erhalte 3 Punkte."
+      ]
+    },
+    {
+      "name": "Blendbombe",
+      "icon": "flash.png",
+      "points": "1",
+      "description": [
+        "Eerzeuge eine Blendbombe in Reichweite 3 der alle Gegner in Reichweite 2 Taumeln lässt."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Blendbombe",
+      "subline": "FOKUS / BONUS",
+      "icon": "flash.png",
+      "points": "1",
+      "description": [
+        "Eerzeuge eine Blendbombe in Reichweite 15ft der alle Gegner in Reichweite 10ft Taumeln lässt."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Parieren",
+      "number": 3,
+      "subline": "FOKUS / REAKTION",
+      "description": [
+        "Greift ein Gegner an, kannst du mit einem Gegenangriff den Schaden verringern. Du machst dabei keinen Schaden.",
+        "Wird der Schaden vollständig aufgehoben ist der Angreifer betäubt bis zum ende deines nächsten Zuges."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Ausweichen",
+      "number": 3,
+      "subline": "FOKUS / REAKTION",
+      "description": [
+        "Greift ein Gegner an, kannst du dich 5ft wegbewegen und einen DEX DC machen gegen den Angriff des Gegners.",
+        "Bei Erfolg bekommst du keinen Schaden.",
+        "Bei Misserfolg bekommst du die hälfte des Schadens."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Brutaler Vollstrecker",
+      "number": 3,
+      "subline": "VOLLSTRECKER",
+      "description": [
+        "Wenn du eine Kreatur angreifst, kannst du dein Momentum benutzen um deinen Angriff zu verstärken.",
+        "Wenn die Kreatur stirbt vor deinem nächsten Zug erhältst du ein Fokus zurück."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Gegenschlag",
+      "subline": "TRAIT / FOKUS",
+      "description": [
+        "Wenn der Schaden beim Parieren den Schaden des Gegners übersteigen, füge den Schaden zu.",
+        "Wenn du eine Fokus Kunst benutzt, hast du Vorteil auf deinen nächsten Angriff."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Zauberwirbel",
+      "subline": "FOKUS / EXTRA",
+      "description": [
+        "Wenn du einen Cantrip oder Zauber benutzt, kannst du einen Fokus Punkt opfern um einen Waffenangriff extra auszuführen"
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Mystisches Momentum",
+      "subline": "TRAIT / MOMENTUM",
+      "description": [
+        "Du kannst einen Zauber Slot verbrauchen, um Momentum in höhe von Zauberslot Level + 1 zu bekommen."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Große Spaltung",
+      "subline": "VOLLSTRECKER",
+      "description": [
+        "Wenn du eine Kreatur mit einer Zweihändigen Waffe angreifst, kannst du für jedes Momentum eine weitere Kreatur angreifen. Für jedes Momentum wird der Angriff 1 mal verstärkt.",
+        "Jedesmal wenn dadurch eine Kreatur besiegt wird, erhälst du ein Fokus Punkt."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Rumtreiber Momentum",
+      "subline": "TRAIT / MOMENTUM",
+      "description": [
+        "Solange du eine Waffe Zweihändig führst, verstärke den Momentum Würfel um 1 Level.",
+        "Solange du eine Mittlere Rüstung trägst, erhälst du deinen CON MOD auf deine Rüstungsklasse."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Sturmangriff",
+      "subline": "TRAIT / ANGRIFF",
+      "description": [
+        "Wenn du vor einem Angriff dich 15ft oder mehr auf einen Gegner zu bewegst, kannst du ein Momentum Würfel zu deinem Angriff hinzufügen.",
+        "Misslingt der Angriff kannst du dich bis zur nächsten Runde nicht bewegen ohne Entwaffnet zu werden. (Kein Parieren Möglich)"
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Gebet der Erlösung",
+      "subline": "FOKUS / HEILUNG",
+      "description": [
+        "Als Bonusaktion kannst du dich und eine Kreatur in 60 ft Reichweite um ein Momentum Würfel Heilen.",
+        "Zusätzlich erhälst du und die Kreatur Temporäre Lebenspunkte in gleicher Höhe."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Fokus des Erlösers",
+      "subline": "TRAIT / HEILUNG",
+      "description": [
+        "Wenn ein Verbündeter auf 0 Leben verringert wird, erhälst du ein Fokus Punkt.",
+        "Dieser Effekt ist 1 mal alle 4 Runden nutzbar."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Heiligendes Licht",
+      "subline": "FOKUS / HEILUNG",
+      "description": [
+        "Erstelle helles Sonnenlicht das 20 ft weit reicht. Ein Verbündeter der das Licht berührt erhält dein Momentum Würfel + ARCANA MOD als Heilung.",
+        "Der Effekt erlöscht am ende deines Nächsten Zuges."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Blutentzug",
+      "subline": "VOLLSTRECKER",
+      "description": [
+        "Bonusaktion: Füge dein Momentum als nekrotischen Schaden einer Kreatur, in Reichweite 5ft, zu. Erhalte die hälfte als Heilung. Die Kreatur muss ein Saving Throw machen (INT | CON + PROF + 8)",
+        "Ist das Ziel blutend oder hat danach weniger als die hälfte Leben, erhalte 1 Fokus Punkt."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Purpurrote Wut",
+      "subline": "TRAIT / MOMENTUM",
+      "description": [
+        "Wenn du durch Schaden unter die hälfte deines Lebens gebracht wird oder blutend gemacht wirst, dann erhalte 1 Fokus Punkt und 1 Momentum.",
+        "Dieser Effekt ist pro Kampf nur einmal Nutzbar oder nachdem du die Todesschweller verlassen hast."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Bluthex",
+      "subline": "TRAIT / ANGRIFF",
+      "description": [
+        "Wenn du Blutentzug benutzt und der saving throw verfehlt, wirke einen der folgenden Zauber: Blutpuppe, Blutbindung oder Blutbrand."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Luftsprung",
+      "subline": "FOKUS / BEWEGUNG",
+      "description": [
+        "Deine Sprungreichweite verdoppelt sich und du kannst schwieriges Gelände ignorieren bis zum Ende deins nächsten Zuges."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Elementare Kunst",
+      "subline": "FOKUS 2 / ANGIRFF",
+      "description": [
+        "Eine Waffe die du berührst hat für die nächsten 4 Züge eine der folgenden Eigenschaften:",
+        "Gift: Die Waffe verursacht 1d4 Gift.",
+        "Eis: Die Waffe verursacht Erfrierung 1.",
+        "Feuer: Die Waffe verursacht 1d4 Brand.",
+        "Licht: Die Waffe verursacht Strahlen 1."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Konzentrierter Geist",
+      "subline": "FOKUS / REAKTION",
+      "description": [
+        "Wenn du ein Saving Throw machen musst gegen einen mentalen Status, kannst du 1 Fokus Punkt ausgeben um Vorteil zu bekommen. Hast du bereits Vorteil kannst du einen Würfel neu würfeln."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Aufblühen",
+      "subline": "FOKUS / MOMENTUM",
+      "description": [
+        "Erhalte jetzt und bei den nächsten 2 mal wo du Momentum bekommst 1 mehr."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Nicht Heute",
+      "subline": "FOKUS / REAKTION",
+      "description": [
+        "Du kannst dich vor einem physischen Status schützen in dem du ein Saving Throw machst gegen Akrobatik oder Athletik. (Schaden wird trotzdem berechnet.)"
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Jägers Ansturm",
+      "subline": "FOKUS / BEWEGUNG",
+      "description": [
+        "Als Bonusaktion kannst du einmal einen Sprint machen oder dich zu einem Verbündeten stellen in Reichweite 60ft. (Dies wird als Bewegung und nicht als Teleport anerkannt.)"
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Jägers Beurteilung",
+      "subline": "FOKUS / SPEZIAL",
+      "description": [
+        "Du kannst den AC und Schwächen und Stärken von einem Kreatur in 60ft Reichweite erkennen.",
+        "Benutzt du 1 weiteren Fokus Punkt kannst du außerdem die Schwäche der Kreatur bestimmen. Die Kretur kann einen CON Saving Throw ausführen."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Brechender Schlag",
+      "subline": "VOLLSTRECKER",
+      "description": [
+        "Bei Angriff:",
+        "1 Momentum: Prone, Saving Throw: STR",
+        "2 Momentum: Geblendet, Saving Throw: CON",
+        "3 Momentum: Gefesselt, Saving Throw: STR",
+        "4 Momentum: Betäubt, Saving Throw: CON",
+        "+5 Momentum: Paralisiert, Saving Throw: CON"
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Vollstrecker Jagd",
+      "subline": "VOLLSTRECKER",
+      "description": [
+        "Du kannst für jeden Momentum 10ft dich auf ein Ziel zubewegen. Dann kannst du einen Nahkampfangriff ausführen und das Momentum benutzen.",
+        "Bewegst du dich mehr als oder gleich 30ft mit dieser Fähigkeit, bekommst du 1 Fokus Punkt."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Blutende Wunde",
+      "subline": "VOLLSTRECKER",
+      "description": [
+        "Erzeuge starkes Bluten bei dem Ziel in höhe deines Momentums.",
+        "Jeden Zug muss die Kreatur ein Saving Throw machen auf (STR | DEX + PROF + BLEAD + 8), schafft die Kreatur es, wird das Bluten um 1 Reduziert, schafft sie es nicht wird das Bluten um 1 verstärkt."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Gelegenheitsschuss",
+      "subline": "VOLLSTRECKER",
+      "description": [
+        "Reaktion: Wenn eine Kreatur in 20ft Reichweite einen physischen Status erleidet, kannst du einen Angriff mit einer Schusswaffe ausführen. Schaden + Momentum, Prone wird ebenfalls erzeugt und du erhälst ein Fokus Punkt."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Volley Vollstrecker",
+      "size": "small",
+      "subline": "VOLLSTRECKER",
+      "description": [
+        "Bonusaktion: Du kannst eine Schusswaffe nachladen und feuern. Trifft alle Kreaturen in einem Kegel von 30ft. Saving Throw für Kreaturen (DEX + PROF + 8).",
+        "Wenn die Kreatur ein Fehler hat wird sie getroffen (Schaden + Momentum).",
+        "Wenn du 2 oder mehr Kreaturen triffst bekommst du 1 Fokus Punkt."
+      ]
+    },
+    {
+      "type": "weapon",
+      "name": "Donnerbüchse",
+      "image": "blunderbuss.png",
+      "props": {
+        "Kosten": "20 gp",
+        "Schaden": "2d4",
+        "Schadensart": "piercing",
+        "Munition": "20",
+        "Munitionsart": "Kugeln",
+        "Magazin": "2 ",
+        "Nachladen": "Langsam",
+        "Lautstärke": "Laut",
+        "Ausbreitung": "20",
+        "Zweihändig": true
+      }
+    },
+    {
+      "type": "weapon",
+      "name": "Steinschloss",
+      "image": "flintlock.png",
+      "props": {
+        "Kosten": "8 gp",
+        "Schaden": "1d8",
+        "Schadensart": "piercing",
+        "Munition": "100/320",
+        "Munitionsart": "Kugeln",
+        "Magazin": "1",
+        "Nachladen": "Schnell",
+        "Lautstärke": "Laut",
+        "Licht": "Hell"
+      }
+    },
+    {
+      "type": "weapon",
+      "name": "Kanone",
+      "image": "canon.png",
+      "props": {
+        "Kosten": "500 gp",
+        "Schaden": "3d10",
+        "Schadensart": "piercing / bludgeoning",
+        "Munition": "120/240",
+        "Munitionsart": "Kanonenkugel",
+        "Magazin": "1",
+        "Nachladen": "Sehr Langsam",
+        "Lautstärke": "Sehr Laut",
+        "Erschütternd": true,
+        "Zweihändig": true
+      }
+    },
+    {
+      "type": "weapon",
+      "name": "Gewehr",
+      "image": "rifle.png",
+      "props": {
+        "Kosten": "25 gp",
+        "Schaden": "1d10",
+        "Schadensart": "piercing",
+        "Munition": "150/500",
+        "Munitionsart": "Kugeln",
+        "Magazin": "2",
+        "Nachladen": "Langsam",
+        "Lautstärke": "Laut",
+        "Zielvorrichtung": true,
+        "Zweihändig": true
+      }
+    },
+    {
+      "type": "weapon",
+      "name": "Pistol",
+      "image": "pistol.png",
+      "props": {
+        "Kosten": "10 gp",
+        "Schaden": "1d6",
+        "Schadensart": "piercing",
+        "Munition": "40/120",
+        "Munitionsart": "Kugeln",
+        "Magazin": "6 F",
+        "Nachladen": "Schnell",
+        "Lautstärke": "Laut",
+        "Fäschern": true
+      }
+    },
+    {
+      "type": "focus",
+      "name": "Guillotine-Schere",
+      "subline": "Lang / Kurzschwert",
+      "size": "small",
+      "description": [
+        "Langschwert wird als Leicht angesehen.",
+        "Transformiert: Beide Waffen werden zu einer mit 1d10 slashing Schaden.",
+        "Mit einer freien Hand kann der Hebel benutzt werden der zusätzlich 1d12 slashing Schaden verursacht.",
+        "Wenn Krit: Zusätzlich 1d12 slashing Schaden."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Guillotine-Schere II",
+      "subline": "Level 2",
+      "size": "small",
+      "description": [
+        "Machst du einen Krit oder einen Schadens Krit darfst du 1 Fähigkeit benutzen.",
+        "Fähigkeit 1: Du kannst das Ziel damit Fessln. Das Ziel muss STR 15 DC schaffen um sich zu befreien. Solange es sich nicht befreit ist es betäubt.",
+        "Fähigkeit 2: Das Ziel verliert ein Körperteil (solange es das kann) und jede Runde 1d6 Schaden."
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Guillotine-Schere",
+      "image": "shears.png"
+    },
+    {
+      "type": "focus",
+      "name": "Fleischhakenschuss",
+      "subline": "Donnerbüchse / Sichel",
+      "size": "small",
+      "description": [
+        "Wenn du mit der Sichel angreifst kannst als Bonus Aktion mit der Donnerbüchse angreifen.",
+        "Transformiert: Greife ein Ziel in Reichweite 30 an. Trifft es seid ihr verbunden. Stärke DC 13: Kreatur wird zu dir gezogen. Entferne die Sichel mit 1d4 piercing Schaden."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Fleischhakenschuss II",
+      "subline": "Level 2",
+      "size": "small",
+      "description": [
+        "Machst du einen Krit oder einen Schadens Krit: Umwickle bis zu 3 Gegner in Reichweite 25ft. Sie werden in die mitte gezogen und sind bewegungsunfähig (STR 14 DC)",
+        "Verringere die AC von den Zielen auf 8 für diese Runde."
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Fleischhakenschuss",
+      "image": "hook.png"
+    },
+    {
+      "type": "focus",
+      "name": "Geweihter Partisan",
+      "subline": "Schild / Speer",
+      "size": "small",
+      "description": [
+        "Reaktion auf Angriff: +2AC, verfehlt der Angriff kannst du mit deinem Speer angreifen.",
+        "Transformiert: Du kannst bei einem erfolgreichen Angriff die Waffe zurückwandelnd, der Schild bleibt in der Kreatur und verursacht jede Runde 1d6 slashing Schaden. Kreatur hat nachteil auf alles.",
+        "Retten: Stärke DC 12"
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Geweihter Partisan II",
+      "subline": "Level 2",
+      "size": "small",
+      "description": [
+        "Wenn du mit deinem Speer in einer Reaktion angreifst und triffst darfst du wieder eine Reaktion in diesem Zug haben.",
+        "Würfelt der Angreifende unter (10 + STR) kannst du dich um die hälfte der differenz heilen. Das Schild absobiert die Energie des Angriffs."
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Geweihter Partisan",
+      "image": "shield.png"
+    },
+    {
+      "type": "focus",
+      "name": "Traumexekutor",
+      "subline": "Sense / Laterne",
+      "size": "small",
+      "description": [
+        "Als teil des Angriffes kannst du eine Kreatur in 5ft entfernung zum Ziel wählen und die hälfte des Schadens hinzufügen.",
+        "Stirbt eine Kreatur in 15ft Reichweite, entziehe ihr mit der Laterne die Seele.",
+        "Transformiert: Du kannst eine Seelenexplosion auslösen, jede Kreatur in 15ft muss ein DEX DC 14 machen. Schaden: 2d8 radiant und 2d8 necrotic."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Traumexekutor II",
+      "subline": "Level 2",
+      "size": "small",
+      "description": [
+        "Bei der Seelenexplosion kannst du wählen wer getroffen wird und die Reichweite wird auf 20ft erhöht.",
+        "Du kannst aus einem Gegner in Reichweite 30ft die Seele raussaugen. Diese kann dann angegriffen werden, bis zum Zug der Kreatur. Jeglicher Schaden wird zu Radiant dadurch."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Sanguinisches S.",
+      "subline": "Lang / Großschwert",
+      "size": "small",
+      "description": [
+        "Dieses Schwert wird stärker wenn du es mit Blut fütterst.",
+        "Beim Angriff: Nimm selbst 1d4 necrotic Schaden um dein Blut dem Schwert zu geben, mach 1d8 necrotic Schaden mehr.",
+        "Das Schwert pulsiert in einem bedrohlichen roten Licht."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Sanguinisches S. II",
+      "subline": "Level 2",
+      "size": "mini",
+      "description": [
+        "Das Schwert hat +1/+1d4 auf Angriff und Schadenswürfe.",
+        "Das Schwert kann sich jetzt auch vom Blut eines Opfers ernähren. Du kannst den Schaden von dir auf den Gegner übertargen, solange das Ziel Blut hat.",
+        "Du bekommst eine Blutladung (max: 4) wann immer du ein Ziel (mit Blut) triffst.",
+        "Du kannst das Schwert nur mit Blutladungen Transformieren. Transformiert verlierst du jede Runde 1 Blutladung."
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Sanguinisches S. III",
+      "subline": "Level 3",
+      "size": "small",
+      "description": [
+        "Transformiert kannst du X Blutladungen ausgeben um eine Fähigkeit zu nutzen. In dieser Runde verbraucht das Schwert keine Ladung.",
+        "1 Ladung: Du heilst dich in höhe des necrotic Schaden den du zugefügt hast.",
+        "2 Ladungen: +1d8 necrotic Schaden (+ 1 Ladung Fähigkeit)"
+      ]
+    },
+    {
+      "type": "focus",
+      "name": "Sanguinisches S. IV",
+      "subline": "Level 4",
+      "size": "small",
+      "description": [
+        "3 Ladungen: Das Ziel ist Blutgefesselt 2d6 necrotic Schaden, DEX 14 DC Fehler: hälfte des Schadens.",
+        "4 Ladungen: Das Ziel wird vom eigenen Blut erstickt 2d10 necrotic Schaden und ist betäubt, DEX 14 DC Fehler: hälfte des Schadens und nicht betäubt. Außerdem heile um die hälfte des necrotic Schadens."
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Traumexekutor",
+      "image": "scyth.png"
+    },
+    {
+      "type": "image",
+      "name": "Sanguinisches Schwert",
+      "image": "sword.png"
+    }
+  ]
+}

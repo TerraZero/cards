@@ -1,0 +1,11 @@
+include mixins
+doctype html
+head
+  link(rel='stylesheet', href='./styles.css')
+body
+  .cards
+    each card in cards
+      - var n = 0
+      while n < (card.number || 1)
+        +embed('card', { card })
+        - n++

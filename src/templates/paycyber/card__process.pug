@@ -1,0 +1,9 @@
+.card__title
+  | #{card.name}
+
+.card__field 
+  each cell in card.field
+    .card__cell(class='card__cell--' + cell)
+
+.card__left 
+.card__right

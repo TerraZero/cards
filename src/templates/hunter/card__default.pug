@@ -1,0 +1,14 @@
+.card__title-bg
+.card__title
+  | #{card.name}
+  .card__points
+    .card__points-bg
+    .card__points-text
+      | #{card.points}
+.card__image
+  img.card__icon(src='/img/' + card.icon)
+.card__description
+  if card.description 
+    each line in card.description
+      .card__line 
+        | #{line}
